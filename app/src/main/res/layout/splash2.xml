@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".activity.WelcomeAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/splashBg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitStart"
+            android:src="@drawable/splash_bgbaru" />
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/container_layout_margin">
+
+            <TextView
+                android:id="@+id/welcome"
+                style="@style/LabelStyle"
+                android:layout_above="@+id/subtitle"
+                android:text="Selamat Datang di PUSDIKLAT ANRI Mobile !"
+                android:textSize="24sp"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                style="@style/LabelStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="115dp"
+                android:text="Aplikasi ini dibuat untuk mengetahui jadwal bagi para Pengajar di PUSDIKLAT ANRI BOGOR"
+                android:textSize="15sp" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/StrokeButtonStyle"
+                    android:layout_centerInParent="true"
+                    android:minWidth="@dimen/splash_btn_width"
+                    android:text="@string/login_btn_label"
+                    android:textColor="#167ED1"
+                    android:textSize="14sp" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btn_daftar"-->
+                <!--style="@style/SolidButtonStyle"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:minWidth="@dimen/splash_btn_width"-->
+                <!--android:text="DAFTAR"-->
+                <!--android:textSize="14sp" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

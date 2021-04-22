@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context=".activity.ProfileFragment">
+
+    <Button
+        android:id="@+id/btn_logout"
+        style="@style/StrokeButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:minWidth="@dimen/splash_btn_width"
+        android:text="@string/btn_logout"
+        android:textColor="@color/blue_theme"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/btn_setting"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/blue_theme" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/side1"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="@color/blue_theme"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/profile3"
+                android:tint="@color/color_white" />
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:text="PROFIL PENGAJAR"
+                android:textColor="@color/color_white"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/gambarNama"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="@color/blue_theme"
+                app:srcCompat="@drawable/ic_person"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/kolomNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="@color/blue_theme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/gambarNip"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="@color/blue_theme"
+                app:srcCompat="@drawable/ic_nip"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/kolompNip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text=""
+                android:textColor="@color/blue_theme" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="25dp">
+
+            <ImageView
+                android:id="@+id/gambarEmail"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:tint="@color/blue_theme"
+                app:srcCompat="@drawable/ic_email"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/kolomEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text=""
+                android:textColor="@color/blue_theme" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_setting"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btn_logout"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/setting"
+        android:textColor="@color/blue_theme"
+        android:textStyle="bold" />
+
+</RelativeLayout>

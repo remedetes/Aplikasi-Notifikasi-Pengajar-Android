@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".activity.login.LoginAct">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:id="@+id/containerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/container_layout_margin">
+
+            <TextView
+                android:id="@+id/login_title"
+                style="@style/LabelStyle"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="@string/login_title"
+                android:textColor="#167ED1" />
+
+            <TextView
+                android:id="@+id/login_welcome_msg"
+                style="@style/LabelStyle"
+                android:layout_below="@id/login_title"
+                android:layout_marginTop="10dp"
+                android:text="Selamat datang kembali !"
+                android:textSize="23dp" />
+
+            <TextView
+                android:id="@+id/user_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_welcome_msg"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="15dp"
+                android:text="Masukkan Email"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_user"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/user_msg"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_input"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:drawableRight="@drawable/ic_user"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/pass_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_user"
+                android:layout_marginTop="25dp"
+                android:paddingLeft="15dp"
+                android:text="Masukkan Password"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layout_pass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/pass_msg"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_input"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/inputPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input"
+                    android:drawableRight="@drawable/ic_lock"
+                    android:inputType="textPassword"
+                    android:textColor="@color/color_white"
+                    android:textSize="15sp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/forget_password"
+                style="@style/LabelStyle"
+                android:layout_below="@id/layout_pass"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="70dp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:text="Lupa Kata Sandi?"
+                android:textColor="#167ED1"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/SolidButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_below="@id/forget_password"
+                android:layout_marginTop="@dimen/layout_in_between_margins"
+                android:background="@drawable/bg_input"
+                android:text="@string/login_btn_label" />
+
+            <RelativeLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnLogin"
+                android:layout_marginTop="@dimen/divider_top_and_bottom_margins"
+                android:layout_marginBottom="@dimen/divider_top_and_bottom_margins">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/divider_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/divider_start_and_end_margins"
+                    android:background="@color/divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/sign_up_nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/no_account"-->
+                    <!--style="@style/LabelStyle"-->
+                    <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                    <!--android:text="Belum punya Akun ?"-->
+                    <!--android:textColor="@color/account"-->
+                    <!--android:textSize="17sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/sign_up"-->
+                    <!--style="@style/LabelStyle"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_marginBottom="0dp"-->
+                    <!--android:layout_toEndOf="@id/no_account"-->
+                    <!--android:fontFamily="@font/sf_pro_display_medium"-->
+                    <!--android:text=" Daftar"-->
+                    <!--android:textColor="#167ED1"-->
+                    <!--android:textSize="17sp" />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

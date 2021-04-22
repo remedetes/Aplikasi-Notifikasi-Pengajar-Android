@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "364976965681",
+    "firebase_url": "https://appsanri-ba458.firebaseio.com",
+    "project_id": "appsanri-ba458",
+    "storage_bucket": "appsanri-ba458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364976965681:android:d87841d74b400e11",
+        "android_client_info": {
+          "package_name": "com.example.appsanri"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364976965681-k3tbnlnse6o6e06pj62o1qhhr6a9vg5o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.appsanri",
+            "certificate_hash": "606a8ef6f87d156510460b7aa407135ab081ed91"
+          }
+        },
+        {
+          "client_id": "364976965681-2bp0ode29tam970o2hkvgck8l27sttqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl4GULpa3RanjmOJstk9BdIe7bmxTk2Wc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364976965681-2bp0ode29tam970o2hkvgck8l27sttqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

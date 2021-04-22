@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_theme"
+    tools:context=".activity.KalenderFragment">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Kalender"
+        android:layout_above="@+id/layout_calender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffff"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_calender"
+        android:layout_width="300dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_calen">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </CalendarView>
+    </LinearLayout>
+
+    <!--<Button-->
+        <!--android:id="@+id/bg_button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginBottom="-180dp"-->
+        <!--android:background="@drawable/bg_btn"-->
+        <!--android:text="Save" />-->
+
+</RelativeLayout>

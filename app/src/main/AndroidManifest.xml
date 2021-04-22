@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.appsanri">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logodepanbaru"
+        android:label="ANRI Mobile"
+        android:roundIcon="@mipmap/logodepanbaru"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MenuMainContent"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.login.LoginAct"
+            android:parentActivityName=".activity.WelcomeAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WelcomeAct"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".helper.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+
+</manifest>
